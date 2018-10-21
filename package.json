@@ -1,0 +1,19 @@
+{
+  "name": "inteluitst",
+  "version": "0.0.1",
+  "description": "Testing Tony's intelui UI toolkit",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "R.G. Esteves",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.0"
+  }
+}
