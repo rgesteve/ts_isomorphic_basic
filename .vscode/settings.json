@@ -2,12 +2,12 @@
 {
     "files.exclude": {
         "out": true, // set this to true to hide the "out" folder with the compiled JS files
-        "dist" : true,
+        "static/dist" : true,
         "node_modules" : true
     },
     "search.exclude": {
         "out": true, // set this to false to include "out" folder in search results
-        "dist" : true
+        "static/dist" : true
     },
     // Turn off tsc task auto detection since we have the necessary tasks as npm scripts
     "typescript.tsc.autoDetect": "off"
