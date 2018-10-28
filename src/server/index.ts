@@ -6,11 +6,11 @@ import express from 'express';
 import * as path from 'path';
 import  {serverPort} from './config';
 
-console.log(`Running server from directory ${__dirname}.  I'm thinking of using port ${serverPort}.`);
+console.log(`Running server from directory ${__dirname}, using port ${serverPort}.`);
 
 var app  = express();
 
-app.use(express.static(path.resolve(__dirname, '..', '..', 'static')));
+app.use(express.static(path.resolve(__dirname, '..', 'static')));
 // not clear how to pass the 'not found' handler in typescript
 
 app.listen(serverPort, () => {

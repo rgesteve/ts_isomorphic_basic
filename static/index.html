@@ -10,9 +10,15 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.21.5/system.js"></script>
         <!-- <script src="/node_modules/systemjs/0.20.13/system.js"></script> -->
-        <script src="dist/client/index.js"></script>
+        <!-- <script src="dist/client/index.js"></script> -->
+        <script src="js/bundle.js"></script>
         <script>
-            SystemJS.config({ 'paths' : { "index": 'dist/client/index.js' } } );
+            /*
+            SystemJS.config({ 'paths' : { "index": 'dist/client/index.js',
+                                          "lib"  : 'dist/client/lib/'
+                            }});
+                            */
+
             SystemJS.import('index')
                 .then((module) => {
                     console.log("Trying first-party module");

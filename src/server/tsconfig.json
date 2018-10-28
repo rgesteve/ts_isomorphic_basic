@@ -1,0 +1,14 @@
+{
+  "extends" : "../../tsconfig.json",
+  "compilerOptions": {
+      "module" : "commonjs",
+      "lib": ["es2015","es2017"],
+      //"outFile": "./static/dist/client/bundle.js",                       /* Concatenate and emit output to single file. */
+      "outDir": "../../dist",
+      // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+      // "composite": true,                     /* Enable project compilation */
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}

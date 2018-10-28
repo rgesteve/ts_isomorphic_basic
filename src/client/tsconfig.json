@@ -1,0 +1,11 @@
+{
+    "extends" : "../../tsconfig.json",
+    "compilerOptions": {
+      "module" : "system",
+      "lib": ["es2015","es2017", "dom"],
+      "outFile": "../../static/js/bundle.js",
+    },
+    "include": [
+      "**/*.ts"
+    ]
+}

@@ -4,10 +4,10 @@
   "description": "Testing Tony's intelui UI toolkit",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && npx tsc",
-    "start": "npm run build && node dist/server/index.js",
+    "build": "npm run clean && npx tsc -p src/client && npx tsc -p src/server",
+    "start": "npm run build && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean" : "npx rimraf static/dist"
+    "clean" : "npx rimraf static/js dist"
   },
   "author": "R.G. Esteves",
   "license": "ISC",
